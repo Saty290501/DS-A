@@ -1,0 +1,23 @@
+When a function calls itself, its called Recursion. It will be easier for those who have seen the movie Inception. 
+Leonardo had a dream, in that dream he had another dream, in that dream he had yet another dream, and that goes on. 
+So it's like there is a function called dream() , and we are just calling it in itself.
+
+function dream()
+    print "Dreaming"
+    dream()
+
+Recursion is useful in solving problems which can be broken down into smaller problems of the same kind. 
+But when it comes to solving problems using Recursion there are several things to be taken care of. 
+Let's take a simple example and try to understand those. 
+Following is the pseudo code of finding factorial of a given number  using recursion.
+
+int fact(int n){
+    //Base Case 
+    if (n==0)     // Without a base case, we will get a segmentation fault 
+    {
+        return 1;
+    }
+
+    //Recursive Relation
+    return n * fact(n - 1);
+}
